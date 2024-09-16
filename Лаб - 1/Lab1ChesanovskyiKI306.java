@@ -1,12 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * Клас Lab1 реалізує приклад програми до лабораторної роботи №1
- */
 public class Lab1ChesanovskyiKI306 {
     public static void main(String[] args) throws FileNotFoundException {
-
         // Створення та ініціалізація змінних
         int nRows;
         char filler;
@@ -33,37 +29,32 @@ public class Lab1ChesanovskyiKI306 {
         }
         
         filler = fillerInput.charAt(0); // Беремо перший символ зі введеного рядка
- 
-        // Верхня частина (зростаючі ряди)
-        for (int i = 1; i <= nRows / 2; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print(filler);
-                fout.print(filler);
-            }
-            System.out.println(); // Перехід на новий рядок
-            fout.println(); // Запис у файл
+
+        // Створюємо зубчастий масив
+        char[][] jaggedArray = new char[nRows][];
+
+        // Виділяємо пам'ять для кожного рядка
+        for (int i = 0; i < nRows; i++) {
+            int midPoint = nRows / 2;
+            int numSymbols = (i < midPoint) ? i + 1 : nRows - i; // кількість символів в рядку
+            jaggedArray[i] = new char[numSymbols]; // виділяємо пам'ять під символи
         }
 
-        //Середина
-        int mark; // Змінна для перевірки на парність чи непарність числа nRows (розміру масиву)
-        if (nRows % 2 == 0) mark = 0;
-        else mark = 1;
-
-        for (int i = 0; i < (nRows / 2) + mark; i++){
-            System.out.print(filler);
-            fout.print(filler);
-        }
-        System.out.println(); // Перехід на новий рядок
-        fout.println(); // Запис у файл
-
-        // Нижня частина (спадні ряди)
-        for (int i = (nRows - 1) / 2; i >= 1; i--) {
-            for (int j = 0; j < i; j++) {
-                System.out.print(filler);
-                fout.print(filler);
+        // Заповнюємо масив символом '#'
+        for (int i = 0; i < nRows; i++) {
+            for (int j = 0; j < jaggedArray[i].length; j++) {
+                jaggedArray[i][j] = filler;
             }
-            System.out.println(); // Перехід на новий рядок
-            fout.println(); // Запис у файл
+        }
+
+        // Виводимо масив
+        for (int i = 0; i < nRows; i++) {
+            for (int j = 0; j < jaggedArray[i].length; j++) {
+                System.out.print(jaggedArray[i][j]);
+                fout.print(jaggedArray[i][j]);
+            }
+            System.out.println(); // перехід на новий рядок
+            fout.print("\n");
         }
 
         // Закриття файлів

@@ -1,7 +1,12 @@
 import java.io.*;
 import java.util.*;
-
+/*
+ * Клас для створення зубчастого масиву та його заповнення відповідним візерунком
+ */
 public class Lab1ChesanovskyiKI306 {
+    /*
+     * Головний метод програми
+     */
     public static void main(String[] args) throws FileNotFoundException {
         // Створення та ініціалізація змінних
         int nRows;

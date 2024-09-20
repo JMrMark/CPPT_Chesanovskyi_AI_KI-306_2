@@ -1,0 +1,34 @@
+|=========================================
+| **Information about the Patron was shown**
+| Caliber of the Patron is 10.0 mm
+| The type of Patron is Incendiary (fire)
+| Patron is NOT USED
+| The patron is NOT UNDER the prohibition of the Geneva Convention
+|=========================================
+|=========================================
+| The patron was used! 
+|=========================================
+|=========================================
+| The user tried to use used Patron 
+| This action was rejected 
+|=========================================
+|=========================================
+| The patron was successfully reload! 
+|=========================================
+|=========================================
+| The patron was successfully banned! 
+|=========================================
+|=========================================
+| The user tried to use forbidden Patron 
+| This action was rejected 
+|=========================================
+|=========================================
+| User has changed the caliber of the patron 
+| From 10.0 to 5.56
+|=========================================
+|=========================================
+| The patron was successfully unbanned! 
+|=========================================
+|=========================================
+| The patron was successfully used and now it is gone. Bye ;] 
+|=========================================

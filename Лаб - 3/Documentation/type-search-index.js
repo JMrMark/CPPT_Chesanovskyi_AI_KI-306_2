@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI306_Chesanovskyi_Lab3","l":"Patron"},{"p":"KI306_Chesanovskyi_Lab3","l":"PatronApp"},{"p":"KI306_Chesanovskyi_Lab3","l":"SmartPatron"}];updateSearchResults();
